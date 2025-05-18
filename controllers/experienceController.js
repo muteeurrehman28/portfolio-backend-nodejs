@@ -3,6 +3,8 @@ const Experience = require('../models/Experience');
 // @desc    Get all experience records
 // @route   GET /api/experience
 // @access  Public
+//
+
 const getExperiences = async (req, res) => {
   try {
     const experiences = await Experience.find().sort({ startDate: -1 });
