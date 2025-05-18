@@ -3,6 +3,8 @@ const Education = require('../models/Education');
 // @desc    Get all education records
 // @route   GET /api/education
 // @access  Public
+//
+
 const getEducation = async (req, res) => {
   try {
     const education = await Education.find().sort({ startDate: -1 });
