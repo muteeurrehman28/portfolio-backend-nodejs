@@ -1,3 +1,5 @@
+# Files to be ignored
+
 # Dependencies
 node_modules/
 npm-debug.log
