@@ -3,6 +3,7 @@ const Skill = require('../models/Skill');
 // @desc    Get all skills
 // @route   GET /api/skills
 // @access  Public
+//
 const getSkills = async (req, res) => {
   try {
     const skills = await Skill.find().sort({ category: 1, name: 1 });
